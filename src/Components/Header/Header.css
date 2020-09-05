@@ -1,0 +1,10 @@
+.header {
+    background: #3399ff;
+    margin: 0;
+    padding: 9px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 210px;
+}

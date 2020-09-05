@@ -1,0 +1,22 @@
+.side-items {
+    list-style: none;
+    margin-block-start: -5px;
+}
+
+.side-items li {
+    background: #3399ff;
+    color: #fff;
+    margin: 4px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h3.bartitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #201e1e;
+    border-bottom: 1px dashed #3399ff;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
