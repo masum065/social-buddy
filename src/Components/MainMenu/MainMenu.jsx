@@ -1,7 +1,6 @@
 import React from 'react';
 import './MainMenu.css';
 import { Button } from '@material-ui/core';
-// import { Link } from 'react-router-dom';
 
 const MainMenu = () => {
   const mainMenu = ['Home', 'Contact', 'About'];

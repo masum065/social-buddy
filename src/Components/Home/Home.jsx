@@ -7,7 +7,7 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const apiURL = 'http://jsonplaceholder.typicode.com/posts';
+    const apiURL = 'https://jsonplaceholder.typicode.com/posts';
     fetch(apiURL)
       .then((response) => response.json())
       .then((data) => setPosts(data));

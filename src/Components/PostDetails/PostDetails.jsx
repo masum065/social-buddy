@@ -12,14 +12,14 @@ const PostDetails = () => {
   const [post, setPost] = useState({});
   const [comments, setComments] = useState([]);
   useEffect(() => {
-    const apiURL = `http://jsonplaceholder.typicode.com/posts/${postId}`;
+    const apiURL = `https://jsonplaceholder.typicode.com/posts/${postId}`;
     fetch(apiURL)
       .then((response) => response.json())
       .then((data) => setPost(data));
   }, [postId]);
 
   useEffect(() => {
-    const apiURL = `http://jsonplaceholder.typicode.com/posts/${postId}/comments`;
+    const apiURL = `https://jsonplaceholder.typicode.com/posts/${postId}/comments`;
     fetch(apiURL)
       .then((response) => response.json())
       .then((data) => setComments(data));
