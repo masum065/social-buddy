@@ -13,19 +13,23 @@ const Header = () => {
         <img src={Logo} alt='' />
       </div>
 
-      <Container>
-        <Grid container direction='row' justify='space-between'>
-          <Grid item xs={8}>
-            <MainMenu />
+      <section style={{ background: '#3399ff' }}>
+        <Container>
+          <Grid container direction='row' justify='space-between'>
+            <Grid item xs={8}>
+              <MainMenu />
+            </Grid>
+            <Grid style={{ textAlign: 'right' }} item xs={4}>
+              <div className='serach-box'>
+                <Search />
+                <Button>
+                  <SearchIcon />
+                </Button>
+              </div>
+            </Grid>
           </Grid>
-          <Grid style={{ textAlign: 'right' }} item xs={4}>
-            <Search />
-            <Button>
-              <SearchIcon />
-            </Button>
-          </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </section>
     </>
   );
 };

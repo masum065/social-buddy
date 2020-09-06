@@ -1,0 +1,15 @@
+.post-box {
+    margin-top: 55px !important;
+}
+
+.post-box h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #000000e3;
+    text-transform: capitalize;
+}
+
+.post-box p {
+    font-size: 18px;
+    font-weight: 300;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './PostSingle.css';
+import './PostItem.css';
 import {
   Card,
   CardActionArea,
@@ -8,28 +8,31 @@ import {
   CardActions,
   Button,
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
-const PostSingle = () => {
+const PostItem = (props) => {
+  const { title, body, id } = props.post;
   return (
     <Card style={{ marginBottom: '5px' }}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant='h5' component='h2'>
-            Lizard
+            {title}
           </Typography>
           <Typography variant='body2' color='textSecondary' component='p'>
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {body}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size='small' style={{ color: '#3399ff' }}>
-          Learn More
-        </Button>
+        <Link className='learnmore-btn' to={`/posts/${id}`}>
+          <Button size='small' style={{ color: '#3399ff' }}>
+            Learn More
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );
 };
 
-export default PostSingle;
+export default PostItem;

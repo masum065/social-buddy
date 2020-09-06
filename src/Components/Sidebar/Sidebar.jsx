@@ -6,8 +6,8 @@ const Sidebar = () => {
     <div style={{ background: 'white' }}>
       <h3 className='bartitle'>Latest Posts</h3>
       <ul className='side-items'>
-        {latestPost.map((post) => (
-          <li>{post}</li>
+        {latestPost.map((post, index) => (
+          <li key={index}>{post}</li>
         ))}
       </ul>
     </div>

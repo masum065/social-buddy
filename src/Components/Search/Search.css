@@ -1,4 +1,11 @@
 #search {
-    padding: 9px 15px;
-    margin: 4px 10px;
+    padding: 5px 10px;
+    margin: 4px 5px;
+    color: #fff;
+    border-color: #fff;
+}
+
+#search::before,
+#search::after {
+    border-bottom: 1px soldi #fff !important;
 }

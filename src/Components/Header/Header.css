@@ -1,10 +1,13 @@
 .header {
-    background: #3399ff;
     margin: 0;
-    padding: 9px;
+    padding: 15px;
     text-align: center;
 }
 
 .header img {
     max-width: 210px;
+}
+
+.serach-box {
+    padding: 13px 0;
 }
