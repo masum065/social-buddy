@@ -33,7 +33,7 @@ const PostDetails = () => {
         <Grid container justify='space-between' spacing={2}>
           <Grid className='post-box' item xs={8}>
             <PostSingle post={post} />
-            <h3 className='comment-title'>Comments</h3>
+            <h3 className='comment-title'>Comments ({comments.length})</h3>
             {comments.map((comment) => (
               <Comments
                 key={comment.id}

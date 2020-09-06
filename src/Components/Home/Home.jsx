@@ -17,6 +17,9 @@ const Home = () => {
       <Container>
         <Grid container justify='space-between' spacing={2}>
           <Grid style={{ marginTop: '22px' }} item xs={9}>
+            <h3 className='comment-title post-count'>
+              Post Founds ({posts.length})
+            </h3>
             {posts.map((post) => (
               <PostItem key={post.id} post={post} />
             ))}
